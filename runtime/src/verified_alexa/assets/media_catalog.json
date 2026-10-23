@@ -1,0 +1,12 @@
+{
+  "clip-long": {
+    "title": "Tidal Clock — original procedural film",
+    "filename": "clip-long.webm",
+    "sha256": "aed95909001d2cafecc5d3047ce23c2a4956e24d9c826d218f5412b29f8ca3d6",
+    "duration": 60.0,
+    "width": 640,
+    "height": 360,
+    "license": "CC0-1.0",
+    "scope": "original procedural demo film, no real-world footage"
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verified Alexa — Only this part</title><link rel="stylesheet" href="/assets/consumer.css"></head>
+<body><main class="shell">
+<header class="top"><div class="brand">Verified <em>Alexa</em> <span>LOCAL PLAYBACK</span></div><div class="boundary">Simulated Alexa+ · real local player · independent observation</div></header>
+<div class="hero"><div class="eyebrow">A playback agreement you can change</div><h1>Only this part. Then stop.</h1><p>Continue where you left off. Choose where it ends. Allow one repair, then ask.</p></div>
+<div class="grid"><section class="panel playback">
+<div class="playerhead"><h2>Your playback target</h2><span id="clipbadge" class="badge">Local media</span></div>
+<div id="ownership" class="below">Checking this window’s player association…</div>
+<video id="player" muted autoplay playsinline aria-label="Actual local video player; use the MCP playback buttons and agreement below"></video>
+<div id="playerstate" class="playerstate">Player waiting for a mission</div>
+<div class="controls"><button id="playa">Blue Orbit · Clip A</button><button id="playb">Amber Trail · Clip B</button><button id="pause">Pause</button><button id="stop" class="stop">Stop now</button></div>
+<div class="progresscard" id="progresscard"><div><div class="eyebrow">Fresh observation</div><h3 id="progressstatus">Current state not checked</h3><p id="progressdetail">A saved receipt cannot describe the player now.</p><span id="observedtime">No fresh observation yet</span><span id="freshness">Awaiting confirmation</span></div><img id="evidenceframe" hidden alt="Actual player frame captured by the independent observer"></div>
+<div class="controls"><button id="drift" disabled>Inject a route interruption</button><button id="voice" aria-pressed="false">Enable spoken replies</button><select id="voices" aria-label="English voice"><option>English voice</option></select></div>
+<div id="voicehint">Spoken replies use your browser’s English voice. Text is always available.</div>
+<details><summary>What is real, and what is simulated?</summary><p>Real: local video bytes, actual rendering, playback agreements, route failures/repairs, separate observer and MCP calls. Simulated: Alexa+ identity. Verification expires; it assumes a trusted local OS/browser and refers to the dedicated target. No native Alexa+ or physical TV control. Physical microphone, room acoustics and human usability remain UNVERIFIED.</p></details>
+</section><section class="panel agreement">
+<div id="current" class="current pending"><span id="status">Ready</span></div>
+<div class="planbuilder"><div class="sectionhead"><h2>Your playback agreement</h2><span class="badge">Local &amp; private</span></div>
+<label>Choose a video<select id="media" aria-label="Local video selection"><option value="clip-a">Blue Orbit</option><option value="clip-b">Amber Trail</option></select></label>
+<div class="formrow"><label>Start at (seconds)<input id="startseconds" type="number" min="0" step="0.1" value="20"></label><label>Stop at (seconds)<input id="endseconds" type="number" min="0.1" step="0.1" value="45"></label></div>
+<label class="check"><input type="checkbox" id="usebookmark">Use the last observed bookmark instead</label>
+<label>If interrupted<select id="repairlimit"><option value="1">Repair once, then ask me</option><option value="0">Ask me before any repair</option></select></label>
+<button id="previewplan" class="primary wide">Review this agreement</button>
+<details><summary>Use your own local video</summary><p>WebM/MP4, up to 32 MB. Only supported decodable files are imported. Content identity is measured locally; this is not semantic video recognition or support for every codec.</p><input id="mediafile" type="file" accept="video/webm,video/mp4,.webm,.mp4" aria-label="Import local WebM or MP4 video"><div id="uploadhint">The file stays in this local app’s owned storage.</div></details>
+</div>
+<div id="agreementcard" hidden><div class="eyebrow">Saved agreement</div><strong id="agreementtitle"></strong><p id="agreementterms"></p><span id="planstatus">The agreement is not complete yet.</span><div class="controls"><button id="plancheck">Check agreement</button><button id="planrepair">Allow another repair</button><button id="cancelplan">Cancel agreement</button></div></div>
+<div id="speechpreview" hidden class="preview"><div class="eyebrow">Review before allowing an action</div><div id="recognized"></div><strong id="previewtitle"></strong><p id="previewterms"></p><p id="previewexpiry"></p><div class="controls"><button id="confirmvoice" class="primary">Confirm recognized request</button><button id="cancelvoice">Cancel — no action</button></div></div>
+<div id="chat" class="chat" aria-live="polite"><div class="bubble system">Choose a playback agreement, or ask to play, pause, stop, check or repair. Stop and Cancel withdraw earlier permission.</div></div>
+<form id="form" class="composer"><input id="goal" aria-label="Your request" placeholder="Play Clip A" autocomplete="off"><button id="send" class="primary" type="submit">Send</button><button id="mic" type="button">Mic EN</button><button id="zhmic" type="button">Mic 中文</button></form>
+<div class="quick"><button id="start">Play selected video</button><button id="recheck" disabled>Check again</button><button id="repair" disabled>Yes, fix it</button><button id="decline" disabled>No, don’t repair</button></div><div id="session">No mission yet. Followups keep the same objective.</div>
+<details><summary>Prerecorded speech test (not a microphone test)</summary><p>Actual waveform recognition → concrete preview → confirmation → MCP execution. Synthetic test audio is disclosed.</p><input id="audiofile" type="file" accept="audio/wav,.wav" aria-label="Prerecorded PCM waveform"><button id="fixture">Load synthetic “好修它” test audio</button><button id="planfixture">Load synthetic playback agreement</button></details>
+<details><summary>Technical evidence</summary><div id="timeline"></div><pre id="evidence">Waiting for independent evidence.</pre></details>
+</section></div>
+<footer><span>Controlled expressions · original/local clips · no human study claim</span><span>MCP 2025-11-25 · Streamable HTTP · bounded repair</span></footer>
+</main><script src="/assets/consumer.js"></script></body></html>

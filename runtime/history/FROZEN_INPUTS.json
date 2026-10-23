@@ -1,0 +1,13 @@
+{
+  "scope": "Frozen historical inputs only; not R14 completion evidence",
+  "inputs": [
+    {
+      "file": "VerifiedAlexa_R13_Judge_Demo.zip",
+      "sha256": "beeb8a83b932bce133c44541b88e9001686b7a2ea28e822673ea5c8752fdc97b"
+    },
+    {
+      "file": "VerifiedAlexa_R13_Independent_ReReview.zip",
+      "sha256": "165737c3615b6b564111b16bcceec2ad44e278880404cef6e60ee5a22f484d7a"
+    }
+  ]
+}

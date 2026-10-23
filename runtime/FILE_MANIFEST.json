@@ -1,0 +1,547 @@
+{
+  "schema": "verified-alexa-public-source-manifest/v1",
+  "origin": "R14 / 0.4.0; application code, tests and assets retained from frozen archive",
+  "scope": "Retained R14 code, tests, assets, dependencies and unchanged guides; edited publication guides and historical raw evidence excluded",
+  "files": [
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 2187,
+      "sha256": "17b04313da820226a675312eebcdaa3b1a1e6a4786d98fd11638b6f7ff9bbe21"
+    },
+    {
+      "path": "docs/JUDGE_GUIDE.md",
+      "bytes": 2361,
+      "sha256": "47ddb9c243f819901e8bb943b7a79b5f92ceb6fa93dde4ce9d696498f4ef1453"
+    },
+    {
+      "path": "docs/MEDIA_LICENSE.md",
+      "bytes": 2862,
+      "sha256": "9dd0b9af00e7b02732f9b31913e633b4f260584a0caab32245970244d8d4711d"
+    },
+    {
+      "path": "docs/PRODUCT_FEEDBACK.md",
+      "bytes": 1624,
+      "sha256": "a4c45567703aa5866879e84772ecdff240a7b796244f1b59d30a55616a367413"
+    },
+    {
+      "path": "docs/SUBMISSION_DESCRIPTION.md",
+      "bytes": 1715,
+      "sha256": "4a170603196bbdb0595104187f7658b2af72dbd93ef867a2a15ee9ad9d2b3e97"
+    },
+    {
+      "path": "docs/USABILITY_STUDY.md",
+      "bytes": 395,
+      "sha256": "de43145d3b8ff360038e5a0190527a1c29f1dac4dcc6d1e545f5a81b6240adb1"
+    },
+    {
+      "path": "history/FROZEN_INPUTS.json",
+      "bytes": 407,
+      "sha256": "7a2e06d5cc0fa0dc03e145b41d6e5eaa7f514329bac8d01ccd7d19b5fe748b64"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 823,
+      "sha256": "fe0343b0a88adc9c42336e35c5469eb2e713063c63f9400216d522074252f293"
+    },
+    {
+      "path": "requirements-windows.lock",
+      "bytes": 760,
+      "sha256": "52762bcc789af9585f1697df1bcc0aca0dc54f13689430d5e3bf4e59196e364b"
+    },
+    {
+      "path": "scripts/controlled_comparison_r14.py",
+      "bytes": 11099,
+      "sha256": "4234090d66ce3536a04df9b2cec6f753dd18588a4979ac77700fb282f5b2c20b"
+    },
+    {
+      "path": "scripts/fresh_entry_r14.py",
+      "bytes": 5077,
+      "sha256": "7bd2afd29663f2735537e0ed15fb060a40be9b6ea61c7fe3ea7ac6ad9cb2b3ab"
+    },
+    {
+      "path": "scripts/generate_media.py",
+      "bytes": 2565,
+      "sha256": "9cc4e510f55163509d581be18025a8c447b05252728b15f6d6acc11495e2167b"
+    },
+    {
+      "path": "scripts/generate_media_r14.py",
+      "bytes": 4836,
+      "sha256": "f47ded3329839e9ef95340143ccf11b11d063a169ebfa2a09f752ff71839257e"
+    },
+    {
+      "path": "scripts/generate_plan_audio.ps1",
+      "bytes": 949,
+      "sha256": "af84b44dd27f55d6a9857e1ead36ea556a611816831e01cd12fd740d7942bd4f"
+    },
+    {
+      "path": "scripts/judge_smoke_current.py",
+      "bytes": 390,
+      "sha256": "0f1eb87dda9fbd477fb1f2fc3328d70d147d830b68da599b65ab43cacab00d54"
+    },
+    {
+      "path": "scripts/mux_demo.py",
+      "bytes": 3620,
+      "sha256": "868adf855a99800005ace715e7f3ee8a46de7b6e3e9e477b4f5b24e5a0df73d5"
+    },
+    {
+      "path": "scripts/narrate.ps1",
+      "bytes": 1511,
+      "sha256": "d869b8c6a722ae98063b5faa67fbdbf49abb046a9b0c40531f7d93bcbf5ef127"
+    },
+    {
+      "path": "scripts/record_agreement_walkthrough.py",
+      "bytes": 9606,
+      "sha256": "1fbe5c3c2c2df0ef3ba9ea70752b0868c19fb44c657f3b38b7388918deefacc7"
+    },
+    {
+      "path": "scripts/record_live.py",
+      "bytes": 2898,
+      "sha256": "aea87be2b23e064dfe7019d019c31d678645ee1eda7d8deeadeabd063038601b"
+    },
+    {
+      "path": "scripts/validate_movie.py",
+      "bytes": 18139,
+      "sha256": "6ad59df21e402b2bd7ca2354635d2168b63955c0e9d4825e1ade1a40e13de454"
+    },
+    {
+      "path": "setup_windows.ps1",
+      "bytes": 747,
+      "sha256": "9600450b62d60b0e725f0e8b36540fbe8fe60fd16b5ce7f95992ccebfdf9724b"
+    },
+    {
+      "path": "src/verified_alexa/__init__.py",
+      "bytes": 22,
+      "sha256": "e364931a8afff672985ee99f795e6d8b20ff33c55d71d757ec211ec6689b3c19"
+    },
+    {
+      "path": "src/verified_alexa/assets/clip-a.webm",
+      "bytes": 118489,
+      "sha256": "5d327d4dba7020c31e10f8f50458aa2306b497241b87bda357f18072126480c5"
+    },
+    {
+      "path": "src/verified_alexa/assets/clip-b.webm",
+      "bytes": 111662,
+      "sha256": "f41fe3e1fd3998be3fc7fbd05865317994a067ea9585ad6ef3e59aa89d4ee40b"
+    },
+    {
+      "path": "src/verified_alexa/assets/clip-long.webm",
+      "bytes": 1360966,
+      "sha256": "aed95909001d2cafecc5d3047ce23c2a4956e24d9c826d218f5412b29f8ca3d6"
+    },
+    {
+      "path": "src/verified_alexa/assets/CLIP_LONG_LICENSE.txt",
+      "bytes": 161,
+      "sha256": "c88dea3d1fc812445410ae3868f43ba0a9fab22bdfba2c60142e3aa394ba1d2b"
+    },
+    {
+      "path": "src/verified_alexa/assets/consumer.css",
+      "bytes": 4377,
+      "sha256": "c639d9753a1433463418db19ee44c87be388dab53cf78285b9a28d9da54317a9"
+    },
+    {
+      "path": "src/verified_alexa/assets/consumer.js",
+      "bytes": 23093,
+      "sha256": "5054a65943df54e8afd349ebf4b98133d3e6124ed05d8e6bb382982189c6eb1a"
+    },
+    {
+      "path": "src/verified_alexa/assets/index.html",
+      "bytes": 6434,
+      "sha256": "8a2bc04e4ff66c8775d3b44fcbbe75e6a978ed218febccfc118b933680224bf7"
+    },
+    {
+      "path": "src/verified_alexa/assets/media_catalog.json",
+      "bytes": 361,
+      "sha256": "1480cd30b6f6fd242a762e7737e2ea8aa694cf89e55361153bb7d91cc95fe679"
+    },
+    {
+      "path": "src/verified_alexa/assets/recognize_zh.ps1",
+      "bytes": 2765,
+      "sha256": "c5f5254e6bfbd0eb1b8f9a953fa321954081f353d963640c5c8aa55572b897b2"
+    },
+    {
+      "path": "src/verified_alexa/assets/synthetic-fix-it-zh.wav",
+      "bytes": 66456,
+      "sha256": "65e996021e2ffb5790266a36f8e8a0cce6362157beeb4979ea64f5db670714c2"
+    },
+    {
+      "path": "src/verified_alexa/assets/synthetic-plan-zh.wav",
+      "bytes": 242046,
+      "sha256": "c7fae8c0567481f45a1ef3714082cd252458a9276dce74b60fa9275775b34306"
+    },
+    {
+      "path": "src/verified_alexa/cdp.py",
+      "bytes": 3876,
+      "sha256": "417ab568fa53bb35ba9285496128c78efc81ee911b52dd2af898dc635f68ebb0"
+    },
+    {
+      "path": "src/verified_alexa/consumer_media_mission.py",
+      "bytes": 45519,
+      "sha256": "ce52d27a306130a37aa63a4ea7bcefb41fe87965cffad77431624661f3c4fc52"
+    },
+    {
+      "path": "src/verified_alexa/future_ability_adapter.py",
+      "bytes": 1009,
+      "sha256": "e1cf4fb2d5bd2f8134e5eda7006852f178f36c881b5d7c6aa597869099c9d3ce"
+    },
+    {
+      "path": "src/verified_alexa/goal_contract.py",
+      "bytes": 7373,
+      "sha256": "629f9a6f43b00799f946a0e32aa138dfcab9b21c02a71472e9beeff390036c47"
+    },
+    {
+      "path": "src/verified_alexa/intent.py",
+      "bytes": 827,
+      "sha256": "48298704497e5a37c6635b6e2668e24cbdaa0a4030e7c3877a0de4981daec379"
+    },
+    {
+      "path": "src/verified_alexa/mcp_client.py",
+      "bytes": 3537,
+      "sha256": "2f9383d949fa553fad29ebff88993bea37493875fbdff258312c7753c7580e67"
+    },
+    {
+      "path": "src/verified_alexa/mcp_server.py",
+      "bytes": 8936,
+      "sha256": "80702efb7234f0f1b92e8fd18e0f96ffecf55eda0a3fcce769a66cf8ad9ea7aa"
+    },
+    {
+      "path": "src/verified_alexa/media_catalog.py",
+      "bytes": 6797,
+      "sha256": "4bcba07e839fabc15bbabdc161b4a37132c7eb7fefebc40c74b3784add040014"
+    },
+    {
+      "path": "src/verified_alexa/media_runtime.py",
+      "bytes": 13434,
+      "sha256": "7aa58f6d44ea3339ecdd9c4f67d33253b31ce17a3a72b70a99591e7e3ae6e8a0"
+    },
+    {
+      "path": "src/verified_alexa/operator.py",
+      "bytes": 2488,
+      "sha256": "96bce98589675d2159aa864465dd79cf03ab405f9354c1027d8b3113842025b1"
+    },
+    {
+      "path": "src/verified_alexa/playback_observer.py",
+      "bytes": 19497,
+      "sha256": "bd51a69d220e3d4d7e25d276025d952511a60622da729e529a7d205f81615e9b"
+    },
+    {
+      "path": "src/verified_alexa/simulator.py",
+      "bytes": 24493,
+      "sha256": "ce5792aca9f638b6f87faeacfa31bbdaa986f4ab9fa7e3c5281e239d8c3acffa"
+    },
+    {
+      "path": "src/verified_alexa/voice_input.py",
+      "bytes": 2899,
+      "sha256": "eafc6112f4b5c8d458072d0ff3516b09a7c8c555ea5476637b126cfdbbbf25c6"
+    },
+    {
+      "path": "tests/fixtures/do-not-repair-zh.wav",
+      "bytes": 78322,
+      "sha256": "ec8b9ceb4d998ba2f903a35429d69848506bdbde1959b44321fcbfae08163dea"
+    },
+    {
+      "path": "tests/fixtures/fix-it-zh.wav",
+      "bytes": 66456,
+      "sha256": "65e996021e2ffb5790266a36f8e8a0cce6362157beeb4979ea64f5db670714c2"
+    },
+    {
+      "path": "tests/fixtures/unknown-day-zh.wav",
+      "bytes": 89738,
+      "sha256": "ae4de1a3192fa0b812d4b83dd2f36536e9d80f0b011a07cf1cf9b9f4d3380664"
+    },
+    {
+      "path": "tests/test_authority_r14.py",
+      "bytes": 9515,
+      "sha256": "b1ae5b283186e5697178f5b15f6244a385343df1866c5aac13868e8df180d80e"
+    },
+    {
+      "path": "tests/test_completion_contract.py",
+      "bytes": 2183,
+      "sha256": "0ea73cb21c2000c83f2069a3088651c0d3fd48bca941ef68753552644bdf93ca"
+    },
+    {
+      "path": "tests/test_consumer_recheck.py",
+      "bytes": 9588,
+      "sha256": "6c456e3961a258f6fb8c8d8d642afae2030439ed8bf878d958c7599337e1a935"
+    },
+    {
+      "path": "tests/test_consumer_ui_r13.py",
+      "bytes": 6661,
+      "sha256": "551d5142fa7535a8cd6cd14b718befdf9ff22958ec0614942d395598b2b6bfa6"
+    },
+    {
+      "path": "tests/test_goal_contract_r13.py",
+      "bytes": 5925,
+      "sha256": "90660d6109207f1e29c06425e5906eb8474561a038fa3cee816df76ddb987d83"
+    },
+    {
+      "path": "tests/test_intent.py",
+      "bytes": 1178,
+      "sha256": "88b1a2da4b532d2a5bf786288ff8221f83f665bde8243597216931de29071ba3"
+    },
+    {
+      "path": "tests/test_local_media_ui_r14.py",
+      "bytes": 2403,
+      "sha256": "c7d805ac14f51cc600c2f1581d9d3cf54343a28186cafefed3ee02e840f82657"
+    },
+    {
+      "path": "tests/test_observer_r13.py",
+      "bytes": 8469,
+      "sha256": "ac21d8a80c4d29d9b398c9cad09d8d2d4aa82e9a152da2207f2cb0a4a44ac295"
+    },
+    {
+      "path": "tests/test_observer_r14.py",
+      "bytes": 14203,
+      "sha256": "64c28652790d59c08f56974174083bf29ba8f49a31b56df1fc5a472d1b264cb7"
+    },
+    {
+      "path": "tests/test_operator.py",
+      "bytes": 746,
+      "sha256": "d4972c3c867cf2ce01c6cd65c62abe05aa64f60a944eaf17e83696ba263b7dc5"
+    },
+    {
+      "path": "tests/test_protocol_r13.py",
+      "bytes": 4426,
+      "sha256": "c014df854c98baf83f175ca81139c689ae02c35fc014b6296d29657aa4b2b2f1"
+    },
+    {
+      "path": "tests/test_restart_runtime_r14.py",
+      "bytes": 2159,
+      "sha256": "07b0a9da66a5617d0deb29ca6eac75a59adf428a8f43f468ec33fa847607f9d0"
+    },
+    {
+      "path": "tests/test_runtime_adapter.py",
+      "bytes": 966,
+      "sha256": "26acf707ab8a1986ebd7be36d279c470da233bd06acb10883e4b003378bb9a30"
+    },
+    {
+      "path": "tests/test_ui_progress_r14.py",
+      "bytes": 3454,
+      "sha256": "63af733dfe5917ee2d9e27ebe9dc6f48ec1546f799dfde66fd0fe90d649008d3"
+    },
+    {
+      "path": "tests/test_voice_authority_r14.py",
+      "bytes": 4057,
+      "sha256": "bd37f86255831c7aedb84918922dc5d3ddd9fa377db6f9015b761f53c6e07941"
+    },
+    {
+      "path": "tests/test_voice_confirmation_r13.py",
+      "bytes": 3109,
+      "sha256": "8257dd3619d21771a4b3a7b9e150f488ec2b68d4d29dc8dec58591a66122d9c1"
+    },
+    {
+      "path": "tests/test_voice_input.py",
+      "bytes": 829,
+      "sha256": "dfdc2f2838e846ce1d352ff913f82a406e580e935629463609e3294d7cde5569"
+    },
+    {
+      "path": "tests/test_voice_r13.py",
+      "bytes": 5861,
+      "sha256": "a6fe75edf86aa74dbaccb41bbe1f107f9dbfcd60c03f2a39b4be21b124c2b8ab"
+    },
+    {
+      "path": "tests/test_windows_atomic_save.py",
+      "bytes": 1150,
+      "sha256": "03d3c713836d4068e6a3a3de9c3f87486f93a43fa484460a6594a259aa54d239"
+    },
+    {
+      "path": "wheelhouse/annotated_types-0.8.0-py3-none-any.whl",
+      "bytes": 13427,
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0"
+    },
+    {
+      "path": "wheelhouse/anyio-4.15.1-py3-none-any.whl",
+      "bytes": 132079,
+      "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101"
+    },
+    {
+      "path": "wheelhouse/attrs-26.1.0-py3-none-any.whl",
+      "bytes": 67548,
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+    },
+    {
+      "path": "wheelhouse/cffi-2.1.1-cp312-cp312-win_amd64.whl",
+      "bytes": 185919,
+      "sha256": "f53e442b08449d42821fa4a4fba000095af9f62742a500f978a9f557ec44339a"
+    },
+    {
+      "path": "wheelhouse/click-8.5.0-py3-none-any.whl",
+      "bytes": 125251,
+      "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360"
+    },
+    {
+      "path": "wheelhouse/colorama-0.4.6-py2.py3-none-any.whl",
+      "bytes": 25335,
+      "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+    },
+    {
+      "path": "wheelhouse/cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+      "bytes": 3824692,
+      "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c"
+    },
+    {
+      "path": "wheelhouse/filelock-3.20.0-py3-none-any.whl",
+      "bytes": 16054,
+      "sha256": "339b4732ffda5cd79b13f4e2711a31b0365ce445d95d243bb996273d072546a2"
+    },
+    {
+      "path": "wheelhouse/h11-0.16.0-py3-none-any.whl",
+      "bytes": 37515,
+      "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+    },
+    {
+      "path": "wheelhouse/httpcore2-2.13.1-py3-none-any.whl",
+      "bytes": 83423,
+      "sha256": "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a"
+    },
+    {
+      "path": "wheelhouse/httpx2-2.13.1-py3-none-any.whl",
+      "bytes": 95597,
+      "sha256": "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4"
+    },
+    {
+      "path": "wheelhouse/idna-3.20-py3-none-any.whl",
+      "bytes": 69583,
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
+    },
+    {
+      "path": "wheelhouse/imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl",
+      "bytes": 31246824,
+      "sha256": "02fa47c83703c37df6bfe4896aab339013f62bf02c5ebf2dce6da56af04ffc0a"
+    },
+    {
+      "path": "wheelhouse/iniconfig-2.3.1-py3-none-any.whl",
+      "bytes": 7552,
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7"
+    },
+    {
+      "path": "wheelhouse/jsonschema-4.26.0-py3-none-any.whl",
+      "bytes": 90630,
+      "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce"
+    },
+    {
+      "path": "wheelhouse/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "bytes": 18437,
+      "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe"
+    },
+    {
+      "path": "wheelhouse/mcp-2.3.0-py3-none-any.whl",
+      "bytes": 368664,
+      "sha256": "dd0c44c089d16453e8ae31a3877a0054d7a2314caaa81f5e0541b9b1734b2377"
+    },
+    {
+      "path": "wheelhouse/mcp_types-2.3.0-py3-none-any.whl",
+      "bytes": 69108,
+      "sha256": "968efdbdaedfab06adae40d378a34395f1090c5921d4be3c9cde283aaf76d91d"
+    },
+    {
+      "path": "wheelhouse/opentelemetry_api-1.45.1-py3-none-any.whl",
+      "bytes": 60256,
+      "sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb"
+    },
+    {
+      "path": "wheelhouse/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956,
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "path": "wheelhouse/pluggy-1.6.0-py3-none-any.whl",
+      "bytes": 20538,
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746"
+    },
+    {
+      "path": "wheelhouse/pycparser-3.0-py3-none-any.whl",
+      "bytes": 48172,
+      "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+    },
+    {
+      "path": "wheelhouse/pydantic-2.13.5-py3-none-any.whl",
+      "bytes": 472589,
+      "sha256": "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73"
+    },
+    {
+      "path": "wheelhouse/pydantic_core-2.46.5-cp312-cp312-win_amd64.whl",
+      "bytes": 2043140,
+      "sha256": "5e81740c09e310f5aa5cbd3e434a01c154d4bef93241c7877b39f211d2b78ba8"
+    },
+    {
+      "path": "wheelhouse/pygments-2.21.0-py3-none-any.whl",
+      "bytes": 1250147,
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9"
+    },
+    {
+      "path": "wheelhouse/pyjwt-2.15.1-py3-none-any.whl",
+      "bytes": 33860,
+      "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193"
+    },
+    {
+      "path": "wheelhouse/pytest-8.4.2-py3-none-any.whl",
+      "bytes": 365750,
+      "sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79"
+    },
+    {
+      "path": "wheelhouse/python_multipart-0.0.32-py3-none-any.whl",
+      "bytes": 30042,
+      "sha256": "ff6d3f776f16878c894e52e107296ffc890e913c611b1a4ec6c44e2821fe2e23"
+    },
+    {
+      "path": "wheelhouse/pywin32-312-cp312-cp312-win_amd64.whl",
+      "bytes": 6914841,
+      "sha256": "b457f6d628a47e8a7346ce22acb7e1a46a4a78b52e1d17e1af56871bd19a93bc"
+    },
+    {
+      "path": "wheelhouse/referencing-0.37.0-py3-none-any.whl",
+      "bytes": 26766,
+      "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231"
+    },
+    {
+      "path": "wheelhouse/rpds_py-2026.9.1-cp312-cp312-win_amd64.whl",
+      "bytes": 222923,
+      "sha256": "5ce8943f79c2210f7abcc28e86367b03b28d95027fd01c46d2472373ae70c86f"
+    },
+    {
+      "path": "wheelhouse/setuptools-80.9.0-py3-none-any.whl",
+      "bytes": 1201486,
+      "sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922"
+    },
+    {
+      "path": "wheelhouse/sse_starlette-3.5.0-py3-none-any.whl",
+      "bytes": 17407,
+      "sha256": "3e6e1070df3f0f5d9cea81496de92dbb72f6721871d99748ece67441dd8b7997"
+    },
+    {
+      "path": "wheelhouse/starlette-1.7.0-py3-none-any.whl",
+      "bytes": 78980,
+      "sha256": "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e"
+    },
+    {
+      "path": "wheelhouse/truststore-0.10.4-py3-none-any.whl",
+      "bytes": 18660,
+      "sha256": "adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981"
+    },
+    {
+      "path": "wheelhouse/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571,
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+      "path": "wheelhouse/typing_inspection-0.4.4-py3-none-any.whl",
+      "bytes": 14750,
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147"
+    },
+    {
+      "path": "wheelhouse/uvicorn-0.54.0-py3-none-any.whl",
+      "bytes": 87427,
+      "sha256": "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf"
+    },
+    {
+      "path": "wheelhouse/websocket_client-1.8.0-py3-none-any.whl",
+      "bytes": 58826,
+      "sha256": "17b44cc997f5c498e809b22cdf2d9c7a9e71c02c8cc2b6c56e7c2d1239bfa526"
+    },
+    {
+      "path": "wheelhouse/wheel-0.48.0-py3-none-any.whl",
+      "bytes": 33320,
+      "sha256": "3217dcc807155e45db462d7ef2431f5ddda0d7273b700d05a67b271ceb1287ab"
+    }
+  ]
+}

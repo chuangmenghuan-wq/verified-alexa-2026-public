@@ -1,0 +1,34 @@
+[project]
+name = "verified-alexa-autonomous-operator"
+version = "0.4.0"
+description = "Verified Alexa+ Autonomous Operator for Amazon Build, Ship, Shape 2026"
+requires-python = ">=3.12"
+dependencies = [
+  "mcp==2.3.0",
+  "uvicorn==0.54.0",
+  "starlette==1.7.0",
+  "websocket-client==1.8.0",
+  "filelock==3.20.0",
+  "imageio-ffmpeg==0.6.0",
+]
+
+[build-system]
+requires = ["setuptools>=77,<81"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+record = ["imageio-ffmpeg==0.6.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+verified_alexa = ["assets/*"]
+
+[project.scripts]
+verified-alexa-mcp = "verified_alexa.mcp_server:main"
+verified-alexa-sim = "verified_alexa.simulator:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
