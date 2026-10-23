@@ -1,5 +1,7 @@
 # Verified Alexa — a viewing promise you can change (R14 / 0.4.0)
 
+This public distribution includes one Stop race serialization fix in `src/verified_alexa/consumer_media_mission.py`; the frozen R14 archive is unchanged. See the root README and `FILE_MANIFEST.json` for its exact lineage.
+
 Continue a local video from its freshly observed position, stop at a specific media timestamp, and allow at most one automatic repair. A separate observer checks the actual visible picture. Stop and Cancel revoke earlier actions. A playing stage is not completion of the whole segment promise.
 
 ## Windows quick start
