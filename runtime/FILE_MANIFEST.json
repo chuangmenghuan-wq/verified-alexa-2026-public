@@ -1,7 +1,7 @@
 {
   "schema": "verified-alexa-public-source-manifest/v1",
-  "origin": "R14 / 0.4.0; application code, tests and assets retained from frozen archive",
-  "scope": "Retained R14 code, tests, assets, dependencies and unchanged guides; edited publication guides and historical raw evidence excluded",
+  "origin": "R14 / 0.4.0 retained source and assets, with one public Stop race serialization fix",
+  "scope": "SHA-256 of this public distribution; all retained R14 files except the explicitly marked Stop race fix are byte-identical to the frozen archive",
   "files": [
     {
       "path": "ARCHITECTURE.md",
@@ -175,8 +175,9 @@
     },
     {
       "path": "src/verified_alexa/consumer_media_mission.py",
-      "bytes": 45519,
-      "sha256": "ce52d27a306130a37aa63a4ea7bcefb41fe87965cffad77431624661f3c4fc52"
+      "bytes": 45894,
+      "sha256": "c7a97efbd6c43700f29a91f6d869e6fa33499c2ca9355b19ca35f1dbeb359ef4",
+      "frozen_r14_sha256": "ce52d27a306130a37aa63a4ea7bcefb41fe87965cffad77431624661f3c4fc52"
     },
     {
       "path": "src/verified_alexa/future_ability_adapter.py",
