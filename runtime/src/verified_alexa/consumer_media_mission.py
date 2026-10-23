@@ -278,13 +278,17 @@ class LivingRoomPlaybackMission:
             return self.request(mission_id or '',user_request,allow_recovery,on_event,expected_revision)
         mid=mission_id or 'mission-'+uuid.uuid4().hex[:20]
         if self._path(mid,'.mission.json').exists():return self.request(mid,user_request,allow_recovery,on_event,expected_revision)
-        try:
-            binding=self.executor.bind(mid,operation=operation,content_id=requested['content_id'])
-            if operation!='check' and not request_matches_binding(requested,binding):raise ValueError('Executor changed requested goal')
-        except (OSError,KeyError,ValueError,RuntimeError) as error:
-            return {'final_status':'UNAVAILABLE','accepted':False,'current_status':None,'error':str(error),
-                    'assistant_message':'The owned player is unavailable.'}
-        mission=self._activate(binding,user_request,expected_revision)
+        # Bind the current content and publish the new authority revision under
+        # the same effect lock. A concurrent Play must not switch content between
+        # a Stop binding its target and the Stop fencing older effects.
+        with self.effect_lock:
+            try:
+                binding=self.executor.bind(mid,operation=operation,content_id=requested['content_id'])
+                if operation!='check' and not request_matches_binding(requested,binding):raise ValueError('Executor changed requested goal')
+            except (OSError,KeyError,ValueError,RuntimeError) as error:
+                return {'final_status':'UNAVAILABLE','accepted':False,'current_status':None,'error':str(error),
+                        'assistant_message':'The owned player is unavailable.'}
+            mission=self._activate(binding,user_request,expected_revision)
         if mission is None:return self._stale()
         return self._attempt(mission,allow_recovery,adversarial_interrupt,on_event,perform_action=operation!='check')
 
